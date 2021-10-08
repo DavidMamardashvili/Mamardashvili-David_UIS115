@@ -9,50 +9,50 @@ protected:
 	double b;
 public:
 	/**
-	 \brief	Конструктор по умолчанию
+	 \brief	РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	 */
 	Pair();
 	/**
-	 \brief	Конструктор принимающий числа a и b
+	 \brief	РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїСЂРёРЅРёРјР°СЋС‰РёР№ С‡РёСЃР»Р° a Рё b
 	 */
 	explicit Pair(const double a, const double b);
 	/**
-	 \brief	Деструктор по умолчанию
+	 \brief	Р”РµСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	 */
 	~Pair() = default;
 	/**
-	 \brief	Оператор сдвига
+	 \brief	РћРїРµСЂР°С‚РѕСЂ СЃРґРІРёРіР°
 	 */
 	friend ostream& operator<<(ostream& out, const Pair& pr);
 	/**
-	 \brief	Конструктор копирования
+	 \brief	РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
 	 */
 	Pair(const  Pair&) = default;
 	/**
-	 \brief	Конструктор присвоения
+	 \brief	РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїСЂРёСЃРІРѕРµРЅРёСЏ
 	 */
 	Pair& operator=(const  Pair&) = default;
 	/**
-	 \brief	Возвращает a
+	 \brief	Р’РѕР·РІСЂР°С‰Р°РµС‚ a
 	 \returns	a.
 	 */
 	double get_a()const;
 	/**
-	 \brief	Возвращает b
+	 \brief	Р’РѕР·РІСЂР°С‰Р°РµС‚ b
 	 \returns	b.
 	 */
 	double get_b()const;
 	/**
-	 \brief	Возвращает произведение a и b
+	 \brief	Р’РѕР·РІСЂР°С‰Р°РµС‚ РїСЂРѕРёР·РІРµРґРµРЅРёРµ a Рё b
 	 \returns	a * b.
 	 */
 	double get_composition()const;
 	/**
-	 \brief	Изменяет число a
+	 \brief	РР·РјРµРЅСЏРµС‚ С‡РёСЃР»Рѕ a
 	 */
 	void set_changing_a(const double change_a);
 	/**
-	 \brief	Изменяет число b
+	 \brief	РР·РјРµРЅСЏРµС‚ С‡РёСЃР»Рѕ b
 	 */
 	void set_changing_b(const double change_b);
 };
