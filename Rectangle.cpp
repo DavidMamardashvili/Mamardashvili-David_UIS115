@@ -10,7 +10,7 @@ void Rectangle::set_sides(const double width, const double height)
 	}
 	else
 	{
-		throw invalid_argument{ "Стороны меньше нуля" };
+		throw invalid_argument{ "РЎС‚РѕСЂРѕРЅС‹ РјРµРЅСЊС€Рµ РЅСѓР»СЏ" };
 	}
 }
 Rectangle::Rectangle(double width, double height)

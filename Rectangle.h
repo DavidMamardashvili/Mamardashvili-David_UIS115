@@ -5,37 +5,37 @@ class Rectangle : public Pair
 {
 private:
 	/**
-	 \brief	Сеттер принимающий длины сторон и проверяющий их на отрицательность
+	 \brief	РЎРµС‚С‚РµСЂ РїСЂРёРЅРёРјР°СЋС‰РёР№ РґР»РёРЅС‹ СЃС‚РѕСЂРѕРЅ Рё РїСЂРѕРІРµСЂСЏСЋС‰РёР№ РёС… РЅР° РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕСЃС‚СЊ
 	 */
 	void set_sides(const double a, const double b);
 public:
 	/**
-	 \brief	Конструктор принимающий числа длину и ширину
+	 \brief	РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїСЂРёРЅРёРјР°СЋС‰РёР№ С‡РёСЃР»Р° РґР»РёРЅСѓ Рё С€РёСЂРёРЅСѓ
 	 */
 	explicit Rectangle(const double width, const double height);
 	/**
-	\brief	Деструктор по умолчанию
+	\brief	Р”РµСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	*/
 	~Rectangle() = default;
 	/**
-	 \brief	Конструктор копирования
+	 \brief	РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
 	 */
 	Rectangle(const  Rectangle&) = default;
 	/**
-	 \brief	Конструктор присвоения
+	 \brief	РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїСЂРёСЃРІРѕРµРЅРёСЏ
 	 */
 	Rectangle& operator=(const  Rectangle&) = default;
 	/**
-	 \brief	Оператор сдвига
+	 \brief	РћРїРµСЂР°С‚РѕСЂ СЃРґРІРёРіР°
 	 */
 	friend ostream& operator<<(ostream& out, const Rectangle& rect);
 	/**
-	 \brief	Возвращает площадь
+	 \brief	Р’РѕР·РІСЂР°С‰Р°РµС‚ РїР»РѕС‰Р°РґСЊ
 	 \returns	get_composition().
 	 */
 	double get_area()const;
 	/**
-	 \brief	Возвращает периметр
+	 \brief	Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРµСЂРёРјРµС‚СЂ
 	 \returns	(get_b() * 2) + (get_a() * 2).
 	 */
 	double get_perimeter()const;
